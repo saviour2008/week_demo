@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Hub</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <script src="../flexible.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body class>
+    <div style="width: 100px; height: 100px" class="bg-blue" id="blue"></div>
+    <script src="../js/scrolling-element.js"></script>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                $('#blue').toggleClass('magictime perspectiveDown');
+            }, 3000);
+        })
+    </script>
+</body>
+
+</html>
